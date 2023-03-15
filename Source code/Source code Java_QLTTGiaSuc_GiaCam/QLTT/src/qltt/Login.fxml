@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="PaneDN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qltt.LoginController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="500.0" fitWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="20.0" layoutY="42.0" prefHeight="334.0" prefWidth="250.0" style="-fx-background-color: #eec58d; -fx-background-radius: 70px;">
+         <children>
+            <Button fx:id="btnThoat" layoutX="153.0" layoutY="253.0" mnemonicParsing="false" onAction="#Thoat" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: #da4c1d;" text="Thoát" textAlignment="CENTER" textFill="#050214f7" textOverrun="CLIP">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLogin" layoutX="31.0" layoutY="253.0" mnemonicParsing="false" onAction="#Login" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #da4c1d;" text="Đăng Nhập" textAlignment="CENTER" textFill="#050214f7" textOverrun="CLIP">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Text layoutX="52.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đăng nhập tài khoản" textAlignment="CENTER" wrappingWidth="150.0">
+               <fill>
+                  <LinearGradient endY="0.3904761904761904" startY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#0d2bdb" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <Hyperlink layoutX="125.0" layoutY="207.0" onAction="#QMK" prefHeight="23.0" prefWidth="102.0" text="Quên mật khẩu" textFill="#c90d0d">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></Hyperlink>
+            <PasswordField fx:id="txtPassword" layoutX="25.0" layoutY="167.0" prefHeight="30.0" prefWidth="200.0" promptText="Mật khẩu" style="-fx-background-color: transparent; -fx-border-color: #da4c1d; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></PasswordField>
+            <TextField fx:id="txtUserName" layoutX="25.0" layoutY="122.0" prefHeight="30.0" prefWidth="200.0" promptText="Tên đăng nhập" style="-fx-background-color: transparent; -fx-border-color: #da4c1d; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></TextField>
+         </children>
+         <effect>
+            <DropShadow color="#8f4f1b94" height="53.63" radius="27.7975" spread="0.51" width="59.56" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4457f681-7fca-4ddd-9b90-6f7a29fce9bc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="cashier" class="java.lang.String"/>
+	<field name="mavn" class="java.lang.String"/>
+	<field name="loaivn" class="java.lang.String"/>
+	<field name="tenvn" class="java.lang.String"/>
+	<field name="slnhap" class="java.lang.String"/>
+	<field name="tlnhap" class="java.lang.String"/>
+	<field name="gianhap" class="java.lang.String"/>
+	<field name="ngaynhap" class="java.lang.String"/>
+	<field name="ghichu" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="147" y="10" width="287" height="39" uuid="b2f885e7-a7d9-4a8c-80dd-cc350a179c24"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Danh sách nhập vật nuôi]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="414" y="5" width="49" height="20" uuid="5ba2fd5d-b5c8-464a-bb95-075044218dc4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Bảng: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="476" y="5" width="76" height="20" uuid="6fdc18dc-171e-4f18-bab3-a504bd153898"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cashier}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="5" width="173" height="20" uuid="d2e3f9b9-9604-4845-ae18-8c1bc5e11a5a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Trang trại gia súc, gia cầm]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="26" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="45" height="20" uuid="fef38b49-96f8-48c4-b2fa-e4405210800a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[mã]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="0" width="50" height="20" uuid="e4bebdde-840f-435a-90eb-4c6ab3cd24ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Loại]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="0" width="97" height="20" uuid="db5bc77a-027c-4008-8f01-9946f7275508"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tên]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="0" width="56" height="20" uuid="87507b3b-38f1-47d6-986a-295da33808e3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Số lượng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="255" y="0" width="76" height="20" uuid="91c626ac-89c1-4bd4-95ec-387b5adcd939"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Trọng lượng(kg)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="0" width="58" height="20" uuid="847c045b-4eaf-479a-bbd8-58235b300542"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Giá nhập]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="399" y="0" width="72" height="20" uuid="34f93068-0b29-4d2a-9c00-f82f4f7b9af6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ngày nhập]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="476" y="0" width="79" height="20" uuid="8a023104-cc6c-4639-890c-63f9cf854f24"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ghi chú]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="22" width="555" height="1" uuid="96384eaa-ba0b-4749-932e-e6e6307223bd"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="45" height="20" uuid="c5c6c80a-3d6c-43a8-bc57-40f81e5cb5f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mavn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="0" width="50" height="20" uuid="4f2b8bc3-218b-4884-b15b-97ea9c9d07e9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loaivn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="99" y="0" width="92" height="20" uuid="21ae1fa5-db76-4622-b566-e4e98674a706"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tenvn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="197" y="0" width="51" height="20" uuid="4fc14be1-9c71-420d-9baa-107927005802"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{slnhap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="255" y="0" width="76" height="20" uuid="141cecfa-2d8f-4f63-b75c-dac09c015611"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tlnhap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="0" width="58" height="20" uuid="77e34fc6-c0db-4d28-b97c-708c89ab1bf0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gianhap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="72" height="20" uuid="291f921c-ba50-4e16-9bd6-870d78e29b0d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ngaynhap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="0" width="74" height="20" uuid="ea890037-0179-4eca-9497-f717442af427"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ghichu}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="468" y="5" width="33" height="20" uuid="04bdb2bd-26ff-4506-bda8-82c03805d8fd"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Trang]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="506" y="5" width="49" height="20" uuid="b78a5710-e3e6-4dcd-9adc-06b28f48e053"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="46" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

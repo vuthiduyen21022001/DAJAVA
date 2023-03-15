@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qltt.NhapVatNuoiController">
+   <children>
+      <Text layoutX="367.0" layoutY="23.0" stroke="#dbc7a0" strokeType="OUTSIDE" text="THÔNG TIN NHẬP CON GIỐNG" textAlignment="CENTER" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="367.67578125">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.09999999999999998" startX="0.9047619047619048" startY="0.7619047619047619">
+               <stops>
+                  <Stop color="#08901a" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <SplitPane dividerPositions="0.17352056168505517, 0.3029087261785356" layoutX="13.0" layoutY="10.0" prefHeight="601.0" prefWidth="990.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="34.0">
+         <items>
+            <AnchorPane prefHeight="552.0" prefWidth="170.0">
+               <children>
+                  <VBox layoutX="14.0" prefHeight="514.0" prefWidth="158.0" spacing="2.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0">
+                     <children>
+                        <Label text="Mã:">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtMaVN" prefHeight="25.0" prefWidth="85.0" promptText="Mã vật nuôi" />
+                        <Label fx:id="erMa" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Loại:">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtLoaiVN" prefHeight="25.0" prefWidth="87.0" promptText="Loại vật nuôi" />
+                        <Label fx:id="erLoai" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#f50202">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Tên:">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtTenVN" prefHeight="25.0" prefWidth="144.0" promptText="Tên vật nuôi" />
+                        <Label fx:id="erTen" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="223.0" textFill="#f50505">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Số lượng:">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSLVNN" prefHeight="25.0" prefWidth="87.0" promptText="Số lượng nhập" />
+                        <Label fx:id="erSLNhap" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="204.0" textFill="#f50303">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Trọng lượng:">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtTLVNN" prefHeight="25.0" prefWidth="96.0" promptText="Trọng lượng nhập" />
+                        <Label fx:id="erTLNhap" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="202.0" textFill="#f80606">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Giá nhập:">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtGiaNhap" prefHeight="25.0" prefWidth="118.0" promptText="Giá nhập" />
+                        <Label fx:id="erGiaNhap" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="203.0" textFill="#eb0707">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Ngày nhập:">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="DPNgayNhap" promptText="Ngày nhập" />
+                        <Label fx:id="erNgayNhap" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="203.0" textFill="#eb0707">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Ghi chú:">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtGhiChu" prefHeight="61.0" prefWidth="149.0" promptText="Ghi chú" />
+                     </children>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="554.0" prefWidth="107.0">
+               <children>
+                  <Button fx:id="btnThem" layoutX="16.0" layoutY="48.0" mnemonicParsing="false" onAction="#Them" prefHeight="31.0" prefWidth="53.0" style="-fx-border-color: #00ff00;" text="Thêm" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnSua" layoutX="14.0" layoutY="116.0" mnemonicParsing="false" onAction="#Sua" prefHeight="31.0" prefWidth="56.0" style="-fx-border-color: #00ff00;" text="Sửa" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnXoa" layoutX="14.0" layoutY="188.0" mnemonicParsing="false" onAction="#Xoa" prefHeight="31.0" prefWidth="60.0" style="-fx-border-color: #00ff00;" text="Xoá" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="brnLamMoi" layoutX="14.0" layoutY="275.0" mnemonicParsing="false" onAction="#LamMoi" prefHeight="41.0" prefWidth="95.0" style="-fx-border-color: #00ff00;" text="Làm mới" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/clear.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnIn" layoutX="14.0" layoutY="337.0" mnemonicParsing="false" onAction="#In" prefHeight="31.0" prefWidth="58.0" style="-fx-border-color: #00ff00;" text="In" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/printer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="513.0" layoutY="-1.0" prefHeight="31.0" prefWidth="31.0" AnchorPane.leftAnchor="513.0" AnchorPane.rightAnchor="152.0">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="26.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <TextField fx:id="txtSearch" layoutX="566.0" layoutY="3.0" prefHeight="25.0" prefWidth="121.0" promptText="Seach Danh Sach" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="14.0" />
+                  <TableView fx:id="tableNVN" layoutX="3.0" layoutY="30.0" prefHeight="562.0" prefWidth="679.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0">
+                     <columns>
+                        <TableColumn fx:id="colMaNhap" prefWidth="54.0" text="Mã" />
+                        <TableColumn fx:id="colLoaiNhap" prefWidth="68.0" text="Loại" />
+                        <TableColumn fx:id="colTenNhap" prefWidth="125.0" text="Tên " />
+                        <TableColumn fx:id="colSoLuongNhap" prefWidth="63.0" text="Số lượng" />
+                        <TableColumn fx:id="colTrongLuongNhap" prefWidth="83.0" text="Trọng lượng" />
+                        <TableColumn fx:id="colGiaNhap" prefWidth="81.0" text="Giá nhập" />
+                        <TableColumn fx:id="colNgayNhap" prefWidth="101.0" text="Ngày nhập" />
+                        <TableColumn fx:id="colGhiChu" prefWidth="117.0" text="Ghi chú" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

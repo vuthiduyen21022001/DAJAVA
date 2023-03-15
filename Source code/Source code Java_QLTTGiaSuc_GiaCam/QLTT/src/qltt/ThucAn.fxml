@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qltt.ThucAnController">
+   <children>
+      <SplitPane dividerPositions="0.17369477911646586, 0.3042168674698795" layoutX="6.0" layoutY="32.0" prefHeight="563.0" prefWidth="991.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="34.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="3.0" layoutY="13.0" prefHeight="419.0" prefWidth="190.0" AnchorPane.bottomAnchor="131.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0">
+                     <children>
+                        <Label fx:id="label2" minHeight="16" minWidth="69" prefHeight="37.0" prefWidth="105.0" text="Mã :">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtMaTA" />
+                        <Label fx:id="erMaTA" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="31.0" prefWidth="99.0" text="Tên:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtTenTA" />
+                        <Label fx:id="erTenTA" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Số lương:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSLTA" />
+                        <Label fx:id="erSLTA" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="26.0" prefWidth="90.0" text="Giá:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtGiaTA" />
+                        <Label fx:id="erGiaTA" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Nhà cung cấp:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtNCCTA" />
+                        <Label fx:id="erNCCTA" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="563.0" prefWidth="106.0">
+               <children>
+                  <Button fx:id="btnLamMoiTA" layoutX="14.0" layoutY="274.0" mnemonicParsing="false" onAction="#LamMoiTA" prefHeight="33.0" prefWidth="72.0" style="-fx-border-color: #00ff00;" text="Làm Mới" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/clear.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnSuaTA" layoutX="9.0" layoutY="114.0" mnemonicParsing="false" onAction="#SuaTA" prefHeight="31.0" prefWidth="72.0" style="-fx-border-color: #00ff00;" text="Sửa" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnXoaTA" layoutX="9.0" layoutY="174.0" mnemonicParsing="false" onAction="#XoaTA" prefHeight="31.0" prefWidth="72.0" style="-fx-border-color: #00ff00;" text="Xóa" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnThemTA" layoutX="9.0" layoutY="55.0" onAction="#ThemTA" prefHeight="31.0" prefWidth="72.0" style="-fx-border-color: #00ff00;" text="Thêm" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button layoutX="14.0" layoutY="323.0" mnemonicParsing="false" onAction="#InTA" style="-fx-border-color: #00ff00;" text="In" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/printer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableTA" layoutY="52.0" prefHeight="505.0" prefWidth="684.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0">
+                     <columns>
+                        <TableColumn fx:id="colMaTA" prefWidth="75.0" text="Mã" />
+                        <TableColumn fx:id="colTenTA" prefWidth="75.0" text="Tên thức ăn" />
+                        <TableColumn fx:id="colSLTA" prefWidth="75.0" text="Số lượng" />
+                        <TableColumn fx:id="colGiaTA" prefWidth="75.0" text="Giá" />
+                        <TableColumn fx:id="colNCCTA" prefWidth="142.0" text="Nhà cung cấp" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="txtTKTA" layoutX="534.0" layoutY="5.0" AnchorPane.leftAnchor="534.0" AnchorPane.rightAnchor="14.0" />
+                  <Label layoutX="503.0" layoutY="1.0" prefHeight="31.0" prefWidth="31.0" AnchorPane.leftAnchor="503.0" AnchorPane.rightAnchor="156.0">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="23.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Text layoutX="337.0" layoutY="28.0" stroke="#dbc7a0" strokeType="OUTSIDE" text="DANH MỤC THỨC ĂN" textAlignment="CENTER" AnchorPane.leftAnchor="337.0" AnchorPane.rightAnchor="397.67578125">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.09999999999999998" startX="0.9047619047619048" startY="0.7619047619047619">
+               <stops>
+                  <Stop color="#08901a" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qltt.NhanVienController">
+   <children>
+      <SplitPane dividerPositions="0.1757028112449799, 0.29819277108433734" layoutX="4.0" layoutY="34.0" prefHeight="556.0" prefWidth="987.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="34.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="554.0" prefWidth="215.0">
+               <children>
+                  <VBox prefHeight="430.0" prefWidth="171.0" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0">
+                     <children>
+                        <Label text="Mã nhân viên:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtMaNV" prefHeight="25.0" prefWidth="128.0" />
+                        <Label fx:id="erMaNV" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Họ tên:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtTenNV" />
+                        <Label fx:id="erTenNV" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Giới tính:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtGT" prefHeight="25.0" prefWidth="60.0" />
+                        <Label fx:id="erGT" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Năm sinh">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtNS" prefHeight="25.0" prefWidth="60.0" />
+                        <Label fx:id="erNS" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="SĐT">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSDT" prefHeight="25.0" prefWidth="178.0" />
+                        <Label fx:id="erSDT" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Địa chỉ">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtDC" prefHeight="80.0" prefWidth="168.0" />
+                        <Label fx:id="erDC" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="554.0" prefWidth="107.0">
+               <children>
+                  <Button fx:id="btnLamMoiNV" layoutX="13.0" layoutY="282.0" mnemonicParsing="false" onAction="#LamMoiNV" prefHeight="41.0" prefWidth="92.0" style="-fx-border-color: #00ff00;" text="Làm mới" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: #00ff00;">
+                           <image>
+                              <Image url="@images/clear.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnXoaNV" layoutX="14.0" layoutY="190.0" mnemonicParsing="false" onAction="#XoaNV" prefHeight="31.0" prefWidth="63.0" style="-fx-border-color: #00ff00;" text="Xóa" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: #00ff00;">
+                           <image>
+                              <Image url="@images/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnSuaNV" layoutX="15.0" layoutY="120.0" mnemonicParsing="false" onAction="#SuaNV" prefHeight="31.0" prefWidth="60.0" style="-fx-border-color: #00ff00;" text="Sửa" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="13.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: #00ff00;">
+                           <image>
+                              <Image url="@images/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnThenNV" layoutX="16.0" layoutY="46.0" mnemonicParsing="false" onAction="#ThemNV" prefHeight="31.0" prefWidth="60.0" style="-fx-border-color: #00ff00;" text="Thêm" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: #00ff00;">
+                           <image>
+                              <Image url="@images/add.png" />
+                           </image></ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnInNV" layoutX="13.0" layoutY="339.0" mnemonicParsing="false" onAction="#InNV" prefHeight="31.0" prefWidth="63.0" style="-fx-border-color: #00ff00;" text="In" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/printer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tableNV" layoutX="-3.0" layoutY="33.0" prefHeight="510.0" prefWidth="708.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0">
+                     <columns>
+                        <TableColumn fx:id="colMaNV" prefWidth="82.0" text="Mã" />
+                        <TableColumn fx:id="colTenNV" prefWidth="175.0" text="Họ tên" />
+                        <TableColumn fx:id="colGT" prefWidth="66.0" text="Giới tính" />
+                        <TableColumn fx:id="colNS" prefWidth="60.0" text="Năm sinh" />
+                        <TableColumn fx:id="colSDT" prefWidth="108.0" text="SĐT" />
+                        <TableColumn fx:id="colDC" minWidth="9.0" prefWidth="220.0" text="Địa chỉ" />
+                     </columns>
+                  </TableView>
+                  <Label fx:id="label11" layoutX="507.0" layoutY="5.0" minHeight="16" minWidth="33.0" prefHeight="25.0" prefWidth="33.0" AnchorPane.leftAnchor="507.0" AnchorPane.rightAnchor="156.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="26.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <TextField fx:id="txtTKNV" layoutX="544.0" layoutY="6.0" prefHeight="25.0" prefWidth="158.0" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="14.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Text layoutX="331.0" layoutY="25.0" stroke="#dbc7a0" strokeType="OUTSIDE" text="THÔNG TIN NHẬP NHÂN VIÊN" textAlignment="CENTER" AnchorPane.leftAnchor="331.0" AnchorPane.rightAnchor="405.5478515625">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.09999999999999998" startX="0.9047619047619048" startY="0.7619047619047619">
+               <stops>
+                  <Stop color="#08901a" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

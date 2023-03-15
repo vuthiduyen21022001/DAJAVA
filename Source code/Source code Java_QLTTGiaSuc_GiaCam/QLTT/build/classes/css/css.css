@@ -1,0 +1,14 @@
+
+.root{
+    -fx-background-color: transprent;
+}
+.btnThemTA_button{
+    -fx-border-color: #00ff00;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+.btnThemTA_button:hover{
+    -fx-border-color: #00ff00;
+    -fx-background-color:#00ff00;
+}

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bp" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qltt.MenuChinhController">
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="680.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+         <children>
+            <SplitPane dividerPositions="0.13963210702341136" layoutX="1.0" layoutY="27.0" prefHeight="665.0" prefWidth="1193.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="27.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="643.0" prefWidth="203.0">
+                     <children>
+                        <Accordion layoutY="7.0" prefHeight="326.0" prefWidth="203.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="330.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <panes>
+                            <TitledPane animated="false" prefHeight="305.0" prefWidth="161.0" text="Quản lý trang trại">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="201.0" style="-fx-background-color: transparent;">
+                                       <children>
+                                          <Accordion layoutX="32.0" prefHeight="274.0" prefWidth="154.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-12.0">
+                                            <panes>
+                                              <TitledPane animated="false" prefHeight="172.0" prefWidth="133.0" text="Con giống">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="125.0" prefWidth="172.0">
+                                                         <children>
+                                                            <ListView fx:id="listFormCG" layoutX="20.4" layoutY="-5.0" prefHeight="185.0" prefWidth="127.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="-10.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                </content>
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                              </TitledPane>
+                                              <TitledPane animated="false" prefHeight="219.0" prefWidth="176.0" text="Quá trình nuôi">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <ListView fx:id="listFormQTN" layoutX="25.4" layoutY="3.0" prefHeight="179.0" prefWidth="120.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="-10.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                </content>
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                              </TitledPane>
+                                              <TitledPane animated="false" prefHeight="177.0" prefWidth="133.0" text="Xuất">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="156.0" prefWidth="200.0">
+                                                         <children>
+                                                            <ListView fx:id="listFormXB" layoutX="15.4" layoutY="3.0" prefHeight="183.0" prefWidth="134.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="-10.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                </content>
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                              </TitledPane>
+                                            </panes>
+                                          </Accordion>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                            </TitledPane>
+                            <TitledPane animated="false" prefHeight="290.0" prefWidth="164.0" style="-fx-background-color: transparent;" text="Tài khoản">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="221.0" prefWidth="200.0" style="-fx-background-color: transparent;">
+                                       <children>
+                                          <Button contentDisplay="RIGHT" layoutX="33.6" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#DangXuat" prefHeight="26.0" prefWidth="156.0" text="Đăng Xuât" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="-10.0">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@images/logout.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic></Button>
+                                          <Button contentDisplay="RIGHT" layoutX="34.0" layoutY="33.0" mnemonicParsing="false" onAction="#UpdateMK" onMouseClicked="#DangXuat" prefHeight="26.0" prefWidth="156.0" text="Đổi mật khẩu" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="-10.0">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@images/key.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic></Button>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                            </TitledPane>
+                          </panes>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Accordion>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="583.0" prefWidth="719.0">
+                     <children>
+                        <MediaView fx:id="mediaView" fitHeight="700.0" fitWidth="1200.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0" />
+                        <TabPane fx:id="tabMain" layoutX="5.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="604.0" prefWidth="629.0" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab closable="false" text="Trang Chủ">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="603.0" prefWidth="895.0">
+                                       <children>
+                                          <Label contentDisplay="CENTER" layoutX="9.0" layoutY="5.0" prefHeight="35.0" prefWidth="659.0" text="HỆ THỐNG QUẢN LÝ TRANG TRẠI GIA SÚC-GIA CẦM" textAlignment="CENTER" textFill="#297537" textOverrun="CLIP" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="353.0">
+                                             <font>
+                                                <Font name="System Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+            <MenuBar layoutX="7.0" layoutY="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Tài khoản">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Doipass" text="Đổi mật khẩu">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/key.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#logout" text="Đăng xuất">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                    <MenuItem mnemonicParsing="false" onAction="#exit" text="Thoát">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/thoat.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                  </items>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/taikhoan.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

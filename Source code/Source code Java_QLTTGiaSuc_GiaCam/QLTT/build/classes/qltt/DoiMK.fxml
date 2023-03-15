@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="316.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qltt.DoipassController">
+   <children>
+      <ImageView fitHeight="311.0" fitWidth="507.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-102.0" AnchorPane.topAnchor="1.0">
+         <image>
+            <Image url="@images/bgmn.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="191.0" layoutY="34.0" prefHeight="244.0" prefWidth="251.0" style="-fx-border-color: #30dd14; -fx-background-color: #8fea8f;">
+         <children>
+            <Label layoutX="27.0" layoutY="46.0" text="Tài khoản">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.9666666666666667" startX="1.0" startY="0.8571428571428572">
+                     <stops>
+                        <Stop color="#176f21" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="2.0" layoutY="146.0" text="Mật khẩu mới">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.9666666666666667" startX="1.0" startY="0.8571428571428572">
+                     <stops>
+                        <Stop color="#176f21" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="btnDMK" layoutX="101.0" layoutY="195.0" mnemonicParsing="false" onAction="#DMK" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #21dd60;" text="Đổi mật khẩu" textFill="#101110">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtTK" layoutX="95.0" layoutY="42.0" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: trasparent; -fx-border-color: #21dd14;" />
+            <Label fx:id="erTK" layoutX="96.0" layoutY="70.0" prefHeight="17.0" prefWidth="142.0" textFill="#e80303">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="erMK" layoutX="96.0" layoutY="169.0" prefHeight="17.0" prefWidth="142.0" textFill="#e80303" />
+            <PasswordField fx:id="txtMK" layoutX="95.0" layoutY="142.0" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: trasparent; -fx-border-color: #21dd14;" />
+            <Label layoutX="44.0" layoutY="5.0" text="CẬP NHẬT LẠI MẬT KHẨU">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.9666666666666667" startX="1.0" startY="0.8571428571428572">
+                     <stops>
+                        <Stop color="#176f21" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <PasswordField fx:id="txtMKC" layoutX="95.0" layoutY="95.0" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: trasparent; -fx-border-color: #21dd14;" />
+            <Label layoutX="11.0" layoutY="99.0" text="Mật khẩu cũ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.9666666666666667" startX="1.0" startY="0.8571428571428572">
+                     <stops>
+                        <Stop color="#176f21" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow color="#8fea8f" height="17.79" radius="9.9375" width="23.96" />
+         </effect>
+      </Pane>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#TroLaiMenu">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/45.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

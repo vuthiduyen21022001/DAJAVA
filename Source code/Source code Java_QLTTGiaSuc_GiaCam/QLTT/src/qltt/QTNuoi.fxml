@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qltt.QTNuoiController">
+   <children>
+      <SplitPane dividerPositions="0.1620213384110495, 0.2774848209568549" layoutY="36.0" prefHeight="561.0" prefWidth="1000.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="34.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="559.0" prefWidth="273.0">
+               <children>
+                  <VBox layoutX="8.0" layoutY="3.0" prefHeight="553.0" prefWidth="169.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="35.0">
+                     <children>
+                        <Label fx:id="label3" minHeight="16" minWidth="69" prefHeight="37.0" prefWidth="175.0" text="Mã quá trình nuôi:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtMaQT" />
+                        <Label fx:id="erMaQT" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Mã vật nuôi:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtMaVN" />
+                        <Label fx:id="erMaVN" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Mã thức ăn:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtMaTA" />
+                        <Label fx:id="erMaTA" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Mã thuốc">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtMaT" />
+                        <Label fx:id="erMaT" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="31.0" prefWidth="171.0" text="Mã nhân viên">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtMaNV" />
+                        <Label fx:id="erMaNV" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="31.0" prefWidth="171.0" text="Thời gian:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="txtThoiGian" />
+                        <Label fx:id="erTG" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Tình Trạng Sức Khỏe:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtTTSK" />
+                        <Label fx:id="erTTSK" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="31.0" prefWidth="171.0" text="Mô tả:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtMoTa" prefHeight="73.0" prefWidth="169.0" snapToPixel="false" />
+                        <Label fx:id="erMaT5" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="btnLamMoiQT" layoutX="16.0" layoutY="292.0" mnemonicParsing="false" onAction="#LamMoiQT" prefHeight="41.0" prefWidth="94.0" style="-fx-border-color: #00ff00;" text="Làm Mới" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/clear.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnSuaQT" layoutX="8.0" layoutY="117.0" mnemonicParsing="false" onAction="#SuaQT" prefHeight="30.0" prefWidth="65.0" style="-fx-border-color: #00ff00;" text="Sửa" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnXoaQT" layoutX="7.0" layoutY="189.0" mnemonicParsing="false" onAction="#XoaQT" prefHeight="30.0" prefWidth="67.0" style="-fx-border-color: #00ff00;" text="Xóa" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnThemQT" layoutX="9.0" layoutY="45.0" onAction="#ThemQT" prefHeight="30.0" prefWidth="65.0" style="-fx-border-color: #00ff00;" text="Thêm" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button layoutX="16.0" layoutY="350.0" mnemonicParsing="false" onAction="#InQTN" style="-fx-border-color: #00ff00;" text="In" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/printer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="531.0" prefWidth="466.0">
+               <children>
+                  <TableView fx:id="tableQTN" layoutX="5.0" layoutY="35.0" prefHeight="517.0" prefWidth="704.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0">
+                     <columns>
+                        <TableColumn fx:id="colMaQT" prefWidth="79.0" text="Mã quá trình" />
+                        <TableColumn fx:id="colMaVN" prefWidth="76.0" text="Mã vật nuôi" />
+                        <TableColumn fx:id="colTenVN" prefWidth="76.0" text="Tên vật nuôi" />
+                        <TableColumn fx:id="colMaTA" prefWidth="68.0" text="Mã thức ăn" />
+                        <TableColumn fx:id="colMaT" prefWidth="61.0" text="Mã thuốc" />
+                        <TableColumn fx:id="colMaNV" prefWidth="85.0" text="Mã nhân viên" />
+                        <TableColumn fx:id="colThoiGian" prefWidth="71.0" text="Thời gian" />
+                        <TableColumn fx:id="colTTSK" prefWidth="87.0" text="Tình trạng SK" />
+                        <TableColumn fx:id="colMoTa" prefWidth="98.0" text="Mô tả" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="txtTKQT" layoutX="596.0" layoutY="6.0" prefHeight="25.0" prefWidth="163.0" AnchorPane.leftAnchor="596.0" AnchorPane.rightAnchor="14.0" />
+                  <Label fx:id="label31" layoutX="560.0" minHeight="16" minWidth="33.0" prefHeight="37.0" prefWidth="33.0" AnchorPane.leftAnchor="560.0" AnchorPane.rightAnchor="180.0">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="26.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Text layoutX="334.0" layoutY="27.0" stroke="#dbc7a0" strokeType="OUTSIDE" text="THÔNG TIN QUÁ TRINH TĂNG TRƯỞNG" textAlignment="CENTER" AnchorPane.leftAnchor="334.0" AnchorPane.rightAnchor="400.67578125">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.09999999999999998" startX="0.9047619047619048" startY="0.7619047619047619">
+               <stops>
+                  <Stop color="#08901a" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

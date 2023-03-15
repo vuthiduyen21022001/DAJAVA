@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qltt.XuatBanController">
+   <children>
+      <SplitPane dividerPositions="0.1686746987951807, 0.29417670682730923" layoutX="4.0" layoutY="36.0" prefHeight="559.0" prefWidth="994.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="34.0">
+        <items>
+            <AnchorPane prefHeight="545.0" prefWidth="171.0">
+               <children>
+                  <VBox layoutX="7.0" layoutY="202.0" prefHeight="301.0" prefWidth="158.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0">
+                     <children>
+                        <Label text="Mã bán:" />
+                        <TextField fx:id="txtMaB" />
+                        <Label fx:id="erMaB" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Nhập số lượng bán: " />
+                        <TextField fx:id="txtSLB" />
+                        <Label fx:id="erSLB" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Nhập trọng lượng kg: " />
+                        <TextField fx:id="txtTLB" />
+                        <Label fx:id="erTLB" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Nhập đơn giá: " />
+                        <TextField fx:id="txtGB" />
+                        <Label fx:id="erDGB" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label text="Ngày bán" />
+                        <DatePicker fx:id="txtNB" />
+                        <Label fx:id="erNB" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="221.0" textFill="#ed0505" textOverrun="CLIP">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="7.0" layoutY="29.0" prefHeight="61.0" prefWidth="149.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="10.0">
+                     <children>
+                        <Label text="Mã vật nuôi:" />
+                        <TextField fx:id="txtMaVN" prefHeight="25.0" prefWidth="136.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="btnXoaXB" layoutX="14.0" layoutY="186.0" mnemonicParsing="false" onAction="#XoaXB" prefHeight="32.0" prefWidth="68.0" style="-fx-border-color: #00ff00;" text="Xóa" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnSuaXB" layoutX="15.0" layoutY="118.0" mnemonicParsing="false" onAction="#SuaXB" prefHeight="32.0" prefWidth="68.0" style="-fx-border-color: #00ff00;" text="Sửa" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="13.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnLMXB" layoutX="13.0" layoutY="295.0" mnemonicParsing="false" onAction="#LamMoiXB" prefHeight="32.0" prefWidth="68.0" style="-fx-border-color: #00ff00;" text="Làm mới" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="15.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/clear.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnThemB" layoutX="15.0" layoutY="49.0" mnemonicParsing="false" onAction="#ThemXB" prefHeight="32.0" prefWidth="64.0" style="-fx-border-color: #00ff00;" text="Thêm" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="13.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button layoutX="13.0" layoutY="342.0" mnemonicParsing="false" onAction="#InX" style="-fx-border-color: #00ff00;" text="In" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="15.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/printer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.3983903420523139" layoutX="4.0" orientation="VERTICAL" prefHeight="555.0" prefWidth="713.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TableView fx:id="tableTTVNB" layoutY="32.0" prefHeight="167.0" prefWidth="712.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0">
+                                <columns>
+                                  <TableColumn fx:id="colMaVN" prefWidth="92.0" text="Mã vật nuôi" />
+                                  <TableColumn fx:id="colTenVN" prefWidth="162.0" text="Tên vật nuôi" />
+                                    <TableColumn fx:id="colSLN" prefWidth="113.0" text="SL nhập" />
+                                    <TableColumn fx:id="colTLN" prefWidth="102.0" text="TL nhập" />
+                                    <TableColumn fx:id="colNN" prefWidth="88.0" text="Ngày nhập" />
+                                    <TableColumn fx:id="colGN" prefWidth="133.0" text="Gia bán" />
+                                </columns>
+                              </TableView>
+                              <TextField fx:id="txtTKTTB" layoutX="548.0" layoutY="2.0" prefHeight="16.0" prefWidth="149.0" AnchorPane.leftAnchor="548.0" AnchorPane.rightAnchor="14.0" />
+                              <Label layoutX="517.0" layoutY="3.0" prefHeight="26.0" prefWidth="30.0" AnchorPane.leftAnchor="517.0" AnchorPane.rightAnchor="150.0">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="26.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/search.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Label>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="309.0" prefWidth="711.0">
+                           <children>
+                              <TableView fx:id="tableXB" layoutY="40.0" prefHeight="253.0" prefWidth="712.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                                 <columns>
+                                    <TableColumn fx:id="colMaVNB" prefWidth="120.0" text="Mã vật nuôi" />
+                                    <TableColumn fx:id="colMaB" prefWidth="113.0" text="Mã xuất" />
+                                    <TableColumn fx:id="colSLB" prefWidth="119.0" text="SL bán" />
+                                    <TableColumn fx:id="colTLB" prefWidth="109.0" text="TL bán" />
+                                    <TableColumn fx:id="colNB" prefWidth="96.0" text="Ngày bán" />
+                                    <TableColumn fx:id="colDGB" prefWidth="147.0" text="Đơn giá" />
+                                 </columns>
+                              </TableView>
+                              <Label layoutX="516.0" layoutY="7.0" prefHeight="26.0" prefWidth="30.0" AnchorPane.leftAnchor="516.0" AnchorPane.rightAnchor="151.0">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="26.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/search.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Label>
+                              <TextField fx:id="txtTKXB" layoutX="555.0" layoutY="8.0" AnchorPane.leftAnchor="548.0" AnchorPane.rightAnchor="14.0" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Text layoutX="334.0" layoutY="30.0" stroke="#dbc7a0" strokeType="OUTSIDE" text="THÔNG TIN XUẤT CON GIỐNG" textAlignment="CENTER" AnchorPane.leftAnchor="334.0" AnchorPane.rightAnchor="400.67578125">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.09999999999999998" startX="0.9047619047619048" startY="0.7619047619047619">
+               <stops>
+                  <Stop color="#08901a" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
